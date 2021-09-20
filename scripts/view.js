@@ -48,6 +48,8 @@ async function plotCoordinates(div, X, Y, ZGenes, layoutCoordinates = {}) {
     }
 
     Plotly.newPlot(div, data, layoutCoordinates);
+    document.getElementById('divScale').style.display='block';
+
 };
 
 async function plotSignatures(div, genes, clusterLabels, signatureMatrix) {
